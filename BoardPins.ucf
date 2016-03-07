@@ -1,0 +1,59 @@
+//keyboard scanner module inputs
+NET "col[0]" LOC = "B2";
+NET "col[1]" LOC = "A3";
+NET "col[2]" LOC = "J3";
+//NET "col[3]" LOC = "B5";
+//keyboard scanner module outputs
+NET "row[0]" LOC = "C6";
+NET "row[1]" LOC = "B6";
+NET "row[2]" LOC = "C5";
+//NET "row[3]" LOC = "B7";
+//50MHz clk
+NET "clk" LOC = "B8";
+//sevensegment module cathode outputs
+#NET "CA" LOC = "L14";
+#NET "CB" LOC = "H12";
+#NET "CC" LOC = "N14";
+#NET "CD" LOC = "N11";
+#NET "CE" LOC = "P12";
+#NET "CF" LOC = "L13";
+#NET "CG" LOC = "M12";
+#////sevensegment module anode outputs
+#NET "AN0" LOC = "K14";
+#NET "AN1" LOC = "M13";
+#NET "AN2" LOC = "J12";
+#NET "AN3" LOC = "F12";
+//leds on the basys for debuging purposes
+NET "kCode[0]" LOC = "G1";
+NET "kCode[1]" LOC = "P4";
+NET "kCode[2]" LOC = "N4";
+NET "kCode[3]" LOC = "N5";
+NET "kCode[4]" LOC = "P6";
+NET "kCode[5]" LOC = "P7";
+#NET "kCode[6]" LOC = "M11";
+#NET "kCode[7]" LOC = "M5";
+
+NET"DS"LOC="C9";//|IOSTANDARD = LVCMOS33 | DRIVE = 12;
+NET"oe"LOC="C12";//|IOSTANDARD = LVCMOS33 | DRIVE = 12;
+NET"ST_CP"LOC="A13" ;//|IOSTANDARD = LVCMOS33 | DRIVE = 12;
+NET"SH_CP"LOC="C13" ;//|IOSTANDARD = LVCMOS33 | DRIVE = 12;
+NET"reset"LOC="D12"; //|IOSTANDARD = LVCMOS33 | DRIVE = 12;
+NET"K[0]"LOC="A9";
+NET"K[1]"LOC="B9";
+NET"K[2]"LOC="A10";
+NET"turn"LOC="A7";
+#NET"winner[0]"LOC="M11";
+#NET"winner[1]"LOC="M5";
+
+  NET "AN(3)"  LOC = "F12";  //left-most digit
+  NET "AN(2)"  LOC = "J12";
+  NET "AN(1)"  LOC = "M13";
+  NET "AN(0)"  LOC = "K14";  // right-most digit
+  NET "C(6)"   LOC = "L14";  // CA
+  NET "C(5)"   LOC = "H12";  // CB
+  NET "C(4)"   LOC = "N14";  // CC
+  NET "C(3)"   LOC = "N11";  // CD 
+  NET "C(2)"   LOC = "P12";  // CE
+  NET "C(1)"   LOC = "L13";  // GF
+  NET "C(0)"   LOC = "M12";  // CG
+  NET "DP"     LOC = "N13";
